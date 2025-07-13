@@ -19,14 +19,14 @@ project-root/
 ### Docker イメージのビルド
 
 ```bash
-docker-compose build
+docker compose build
 ```
 
 ### Laravel プロジェクトを作成
 
 ```bash
 # --rm　オプションをつけることで不要なコンテナを残さないようにしています。
-docker-compose run --rm app composer create-project laravel/laravel "10.*"
+docker compose run --rm app composer create-project laravel/laravel "10.*"
 ```
 
 ### Laravel の環境設定
@@ -46,7 +46,7 @@ DB_PASSWORD=secret
 
 ```bash
 # --rm　オプションをつけることで不要なコンテナを残さないようにしています。
-docker-compose run --rm node sh -c "npx create-react-app . --template typescript"
+docker compose run --rm node sh -c "npx create-react-app . --template typescript"
 ```
 
 ### React の設定
